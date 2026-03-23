@@ -1,0 +1,14 @@
+[project]
+name = "ops-orchestrator"
+version = "0.0.1"
+description = "Multi-agent operations orchestrator — full platform routing and workflow management"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "ruff>=0.4.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
